@@ -1,0 +1,98 @@
+[
+ {
+  "name": "gate_wechat_main_article_topics",
+  "description": "Choose WeChat Official Account main articles only when a candidate passes the self increment, reader object and account, and outside benchmark checks."
+ },
+ {
+  "name": "investigate_before_concluding",
+  "description": "Run a real field check before giving a research conclusion, plan or status answer, by sampling first-hand sources, saving the raw evidence, counting it and re-verifying each item before it enters a record."
+ },
+ {
+  "name": "local_anything2explainer",
+  "description": "给一个主题，产出一条黑底 MG 风格（幕底可选星点或点阵波）、有配音字幕章节进度条的科普讲解视频（中文或英文；Remotion 代码动画；时长由用户定，常用 3–5 分钟）。内含可编译模板、图元库、配音/分镜/渲染工具、风格与动效规范、多 agent 分工协议与 QC 判据，以及一条完整样片（《RAG 与知识库》）作为质量标尺。Turn any topic into a narrated motion-graphics explainer video in Chinese or English, on a black canvas with a star-field or dot-field backdrop, TTS voiceover, subtitles and a chapter progress bar, every frame drawn in code with Remotion. Use when the user asks for an explainer, educational or science-communication video about a topic, or wants an article or document turned into a video."
+ },
+ {
+  "name": "local_blogger_distiller",
+  "description": "Use when the user wants to analyze or distill a blogger/account on Xiaohongshu or Douyin, benchmark a target creator, or diagnose their own content strategy. Trigger on requests such as “拆解博主””蒸馏博主””分析小红书博主””分析抖音博主” “诊断我的账号””对标账号””内容策略分析””小红书账号分析””抖音账号分析” “分析封面””关键词趋势””升级我的skill”."
+ },
+ {
+  "name": "local_complaint_miner",
+  "description": "差评挖掘：从 GitHub issues、论坛、知乎/V2EX/小红书、应用商店差评里挖真实用户吐槽，聚成痛点簇，用证据卡评分并过「我们能不能解决」过滤，产出可立项的项目/skill 候选。当用户说『找差评』『挖痛点』『看看别人都在骂什么』『找新项目需求』『这个方向有没有人需要』时触发。"
+ },
+ {
+  "name": "local_creator_buddy",
+  "description": "创作者全域内容搜索总控 Skill。用户发送平台名+关键词、平台链接，或要求分析博主、文章风格、热度、点赞、收藏、评论、爆款原因、选题方向时触发；根据平台和任务自动路由到小红书热门笔记、全域内容搜索、公众号爆款搜索、公众号赛道分析等分支 Skill。"
+ },
+ {
+  "name": "local_figures4papers",
+  "description": "Local skill notes preserved from the previous layout and awaiting review."
+ },
+ {
+  "name": "local_guizang_social_card_skill",
+  "description": "Generate Guizang-style social card image sets, Live Photo motion cards, material-first Live Photo puzzle layouts, triple Live Photo collages, long-video-to-Live-Photo treatments, and WeChat official account cover pairs from articles, scripts, screenshots, product notes, subtitles, photos, or user-supplied videos. Use when the user asks for 小红书图文, Rednote/Xiaohongshu images, social cards, carousel images, 3:4 covers, Live Photo, 实况照片, 单视频实况拼图, 二宫格实况拼图, 三连实况拼图, 四宫格实况拼图, 微信公众号封面, WeChat 21:9 + 1:1 covers, Swiss Style, or magazine-style social images."
+ },
+ {
+  "name": "local_html_explainer",
+  "description": "把任意主题做成「讲解/科普视频」并渲染成 MP4：调研→审查→解说词→字幕→配音（edge-tts，或火山引擎语音合成 2.0）→主题驱动风格编排→并行构建 HTML 场景→确定性逐帧渲染→成片后出多画幅封面。画面语言内置 23 个模板风格 / 8 个类别（大胆信号卡、奢华极简、NYT 数据图表、瑞士网格、故障艺术、胶片漏光、流体 Hero、Logo 收尾、东方柔和有机、VFX 文字光标…共 23 种风格，含每种的画布/配色/字体/时间轴规范，见 references/style-catalog.md）。v2.0 新增动效库、4K60 快门运动模糊、渲染提速、主题驱动模板编排（scripts/style_director.py）。封面默认 16:9 + 3:4 两张；竖版投放再加 9:16。触发场景：要做科普/讲解/教学/知识/产品类视频、\"讲一下 X 做成视频\"、要用 html-video 那种模板化画面但更稳的音画同步、要挑某种视觉风格（极简/数据/赛博/电影感/品牌）出片、要出抖音封面/竖版封面/9:16 封面、anything2explainer 换 HTML 渲染、或提到 html-explainer / HTML 讲解视频 / explainer video / MG 视频。"
+ },
+ {
+  "name": "local_huashu_art_motion",
+  "description": "艺术与视频动画：拆解复刻动画；代码画35种艺术风格并让画活；9种解说动画语法，8种可按口播参数渲片段；含口播整片参考代码及框景检查；人用AI生帧。"
+ },
+ {
+  "name": "local_knowledge_explainer_skill",
+  "description": "把 markdown / 笔记类文档自动生成讲解动画视频，Remotion 渲染、本地跑、不依赖云 API。by nyx研究所 (GitHub @znyupup · B站/小红书 @nyx研究所)"
+ },
+ {
+  "name": "local_live_panel",
+  "description": "Build a terminal-style, always-running animated architecture diagram (a \"live panel\") from a JSON config and render it to an mp4. Use when the user wants a system, agent or org architecture diagram that looks like a monitoring dashboard in a terminal window - fixed layout, glowing packets on the wires, scrolling log, counters, bars that flip state - as a screen-recording-style video or a live web page, instead of a static picture or a step-by-step reveal."
+ },
+ {
+  "name": "local_onetake",
+  "description": "Make short product / skill motion videos (10–30 s, narrated feature demos up to ~60 s) the way high-end launch clips are made — kinetic type, real UI as the material, a hand that causes every reaction, beats that carry into each other instead of replacing each other, hard cuts only where they mean something — without HyperFrames or Remotion. A single HTML composition where every value is a pure function of time, built from a library of measured moves (springs, entrances, carries, contact, camera), rendered frame by frame with real shutter motion blur (1080p30 drafts, 4K60 final), with synthesised sound effects that share one room and an oracle that fails a slideshow before a human has to watch it. Use for 做个动效短片 / 产品宣传片 / 介绍视频 / 发布视频 / 15 秒 launch video / 给 skill 或 app 做个视频 / promo / teaser, for turning real pages or screen recordings into a cut, for product feature demos (产品功能演示 / 功能展示动效) where the UI is rebuilt in HTML from screenshots instead of screen-recorded (不录屏 / 复刻界面 / 截图还原 UI), for narrated cuts with voice-over and subtitles (配音 / 字幕 / 换配音) and for the same film in other languages (日语版 / 多语言 / 本地化), for adding motion vocabulary (动效库 / 转场 / 衔接), and for auditing why a motion video reads as a slideshow (像 PPT / 没节奏 / 一个一个展示 / 转场生硬)."
+ },
+ {
+  "name": "local_paper_writing",
+  "description": "学术论文分节写作与改稿：按导师认可的「功能模块＋语言力学」法（公众号「小盐的世界」《学术训练》五篇）为骨架， ARS 的 CARS 模型与摘要 5 组件、nature-writing 的分节结构卡与 ML/CV 变体、ARIS 的会议模板与评审流程作补强， 绘图走 plot-is-all-you-need 选型＋figures4papers 规范。触发场景：写或改论文的 Introduction / Methodology / Results / Discussion / Abstract 任一节；问「引言怎么写」「方法部分怎么结构化」 「摘要怎么压缩」；投稿前自检、模拟审稿、引用核查；适用 CVPR / ICCV / NeurIPS / ICML 等会议稿与期刊稿。 不用于公众号解读文章写作（那是内容稿，不是论文本体）。"
+ },
+ {
+  "name": "local_plot_is_all_you_need",
+  "description": "看图选图、照图画图的科研绘图闭环。自带一个可以随意增删的图库（像装修的样板房）， 不让用户用文字描述\"要什么图\"，而是把候选图摆出来让用户挑、自由组合（A 的布局 + C 的配色）， 再用用户的数据画出来并和样例并排验证。只要用户想画图、配图、做 figure、可视化数据、 问\"这个数据怎么画好看\"、说\"帮我出张图\"、给了一张例图想要同款、想换配色或版式、 想看看有哪些图可以参考，都应使用本技能，即使用户没有提到图库或技能名。 也用于维护图库：加图、删图、去重、给图写鉴赏卡片、重建索引。"
+ },
+ {
+  "name": "local_punk_skill",
+  "description": "Local skill notes preserved from the previous layout and awaiting review."
+ },
+ {
+  "name": "local_punk_xhs_cards",
+  "description": "Local skill notes preserved from the previous layout and awaiting review."
+ },
+ {
+  "name": "local_seedance_prompt_skill",
+  "description": "Local skill notes preserved from the previous layout and awaiting review."
+ },
+ {
+  "name": "local_verify_claim_scope_before_reporting",
+  "description": "Verify every reported claim against the actual evidence object and its exact scope before reporting — use before sending screenshots, test results, egress/fixed-IP status, or delegated-helper outputs to the user."
+ },
+ {
+  "name": "local_video_prompt_verifier",
+  "description": "Reverse-engineer a reference video into an AI video prompt, then PROVE the prompt works — regenerate with it, score the render against the reference, fix the worst-scoring axis, and repeat until the score converges. Use when the user shares a reference video and wants a prompt that recreates it, or wants to know how close a reversed prompt actually gets. The deliverable is the prompt PLUS its evidence: a score curve, per-round diffs, and side-by-side frames."
+ },
+ {
+  "name": "local_video_publisher_skill",
+  "description": "Local skill notes preserved from the previous layout and awaiting review."
+ },
+ {
+  "name": "local_wechat_reader",
+  "description": "Read WeChat Official Account articles (mp.weixin.qq.com links) that are blocked by WeChat's CAPTCHA for generic fetchers. Trigger on any mp.weixin.qq.com URL or when the user shares a 公众号文章."
+ },
+ {
+  "name": "local_xilo_opus_video",
+  "description": "xilo-opus-video：用代码做视频"
+ },
+ {
+  "name": "local_yichen_skills",
+  "description": "Local skill notes preserved from the previous layout and awaiting review."
+ }
+]

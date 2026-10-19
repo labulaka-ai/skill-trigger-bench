@@ -1,0 +1,494 @@
+[
+ {
+  "q": "今天公众号主文候选有三个：一个遥感新模型、一个台风路径解读、一个AI工具测评，帮我过一下哪篇能上主文",
+  "gold": "gate_wechat_main_article_topics",
+  "kind": "pos",
+  "choice": "gate_wechat_main_article_topics"
+ },
+ {
+  "q": "这篇讲IDW插值的稿子我想放公众号头条，你看行不行",
+  "gold": "gate_wechat_main_article_topics",
+  "kind": "pos",
+  "choice": "gate_wechat_main_article_topics"
+ },
+ {
+  "q": "下一篇主文选什么题？先按我们的规矩筛一遍再给我",
+  "gold": "gate_wechat_main_article_topics",
+  "kind": "pos",
+  "choice": "gate_wechat_main_article_topics"
+ },
+ {
+  "q": "先别急着给方案，你去实际查一圈，把原始数据留下来再回来跟我说",
+  "gold": "investigate_before_concluding",
+  "kind": "pos",
+  "choice": "investigate_before_concluding"
+ },
+ {
+  "q": "这个结论你有几成把握？没核过就先去采样核完再报",
+  "gold": "investigate_before_concluding",
+  "kind": "pos",
+  "choice": "investigate_before_concluding"
+ },
+ {
+  "q": "帮我调研一下这个新工具到底行不行，要有一手证据，别看它官网自己吹",
+  "gold": "investigate_before_concluding",
+  "kind": "pos",
+  "choice": "investigate_before_concluding"
+ },
+ {
+  "q": "把Transformer注意力机制讲成一条五分钟的科普视频，要黑底、动效、配音字幕那种",
+  "gold": "local_anything2explainer",
+  "kind": "pos",
+  "choice": "local_anything2explainer"
+ },
+ {
+  "q": "给我做个英文版的讲解视频，主题是黑洞，带章节进度条",
+  "gold": "local_anything2explainer",
+  "kind": "pos",
+  "choice": "local_anything2explainer"
+ },
+ {
+  "q": "想个选题做成MG动画科普片，三四分钟，有旁白",
+  "gold": "local_anything2explainer",
+  "kind": "pos",
+  "choice": "local_anything2explainer"
+ },
+ {
+  "q": "帮我拆一下小红书上那个教AI的博主，看她是怎么起号变现的",
+  "gold": "local_blogger_distiller",
+  "kind": "pos",
+  "choice": "local_blogger_distiller"
+ },
+ {
+  "q": "分析一下这个抖音账号，他一个月涨粉三千多是怎么做到的",
+  "gold": "local_blogger_distiller",
+  "kind": "pos",
+  "choice": "local_blogger_distiller"
+ },
+ {
+  "q": "我的小红书账号数据一直不行，你帮我诊断一下内容策略",
+  "gold": "local_blogger_distiller",
+  "kind": "pos",
+  "choice": "local_blogger_distiller"
+ },
+ {
+  "q": "最近想找点新项目做，先去看看用户都在骂什么产品难用",
+  "gold": "local_complaint_miner",
+  "kind": "pos",
+  "choice": "local_complaint_miner"
+ },
+ {
+  "q": "这个方向到底有没有人真的需要？去翻翻差评和吐槽验证一下",
+  "gold": "local_complaint_miner",
+  "kind": "pos",
+  "choice": "local_complaint_miner"
+ },
+ {
+  "q": "帮我从GitHub issues里挖一下大家对这类工具的抱怨，看看有没有机会",
+  "gold": "local_complaint_miner",
+  "kind": "pos",
+  "choice": "local_complaint_miner"
+ },
+ {
+  "q": "帮我搜一下小红书上最近爆的AI绘画笔记，看看点赞收藏都是什么量级",
+  "gold": "local_creator_buddy",
+  "kind": "pos",
+  "choice": "local_creator_buddy"
+ },
+ {
+  "q": "公众号上这个赛道最近什么文章火？帮我全网搜一圈分析一下",
+  "gold": "local_creator_buddy",
+  "kind": "pos",
+  "choice": "local_creator_buddy"
+ },
+ {
+  "q": "发你一个平台链接，帮我看看这类内容的热度和爆款原因",
+  "gold": "local_creator_buddy",
+  "kind": "pos",
+  "choice": "local_creator_buddy"
+ },
+ {
+  "q": "按顶刊的绘图规范帮我把这组实验数据图重做一下",
+  "gold": "local_figures4papers",
+  "kind": "pos",
+  "choice": "local_plot_is_all_you_need"
+ },
+ {
+  "q": "figures4papers那套matplotlib规范，套到我这张消融图上",
+  "gold": "local_figures4papers",
+  "kind": "pos",
+  "choice": "local_plot_is_all_you_need"
+ },
+ {
+  "q": "投稿用的图要符合顶会风格，你按那个绘图库的规范来",
+  "gold": "local_figures4papers",
+  "kind": "pos",
+  "choice": "local_plot_is_all_you_need"
+ },
+ {
+  "q": "把这篇文章做成一套小红书图文卡片，3:4的，要杂志风",
+  "gold": "local_guizang_social_card_skill",
+  "kind": "pos",
+  "choice": "local_guizang_social_card_skill"
+ },
+ {
+  "q": "给我做一对公众号封面图，21:9和1:1各一张",
+  "gold": "local_guizang_social_card_skill",
+  "kind": "pos",
+  "choice": "local_guizang_social_card_skill"
+ },
+ {
+  "q": "把这段视频做成实况照片拼图，三连的那种",
+  "gold": "local_guizang_social_card_skill",
+  "kind": "pos",
+  "choice": "local_guizang_social_card_skill"
+ },
+ {
+  "q": "把牛顿第二定律做成讲解视频，我要那种有很多视觉风格可以挑的，画面跟着解说一步步出来",
+  "gold": "local_html_explainer",
+  "kind": "pos",
+  "choice": "local_html_explainer"
+ },
+ {
+  "q": "用HTML做一条科普视频，顺便把抖音封面16:9和3:4都出了",
+  "gold": "local_html_explainer",
+  "kind": "pos",
+  "choice": "local_html_explainer"
+ },
+ {
+  "q": "讲一下复利做成视频，要配音字幕，风格高级一点别像PPT",
+  "gold": "local_html_explainer",
+  "kind": "pos",
+  "choice": "local_html_explainer"
+ },
+ {
+  "q": "我想用代码画一幅会动的艺术画，风格多一点让我挑",
+  "gold": "local_huashu_art_motion",
+  "kind": "pos",
+  "choice": "local_huashu_art_motion"
+ },
+ {
+  "q": "帮我拆解复刻一下这个动画是怎么做的，然后照着做一个",
+  "gold": "local_huashu_art_motion",
+  "kind": "pos",
+  "choice": "local_huashu_art_motion"
+ },
+ {
+  "q": "把这段口播做成解说动画，画面要活起来",
+  "gold": "local_huashu_art_motion",
+  "kind": "pos",
+  "choice": "local_huashu_art_motion"
+ },
+ {
+  "q": "我这份markdown笔记能不能自动变成讲解动画视频？本地跑就行",
+  "gold": "local_knowledge_explainer_skill",
+  "kind": "pos",
+  "choice": "local_knowledge_explainer_skill"
+ },
+ {
+  "q": "把这篇文档转成带动画的讲解片，Remotion渲染",
+  "gold": "local_knowledge_explainer_skill",
+  "kind": "pos",
+  "choice": "local_knowledge_explainer_skill"
+ },
+ {
+  "q": "有个知识点文档，想做成动画讲解，本地生成不要云API",
+  "gold": "local_knowledge_explainer_skill",
+  "kind": "pos",
+  "choice": "local_knowledge_explainer_skill"
+ },
+ {
+  "q": "把我们这套系统架构做成一个像监控大屏一样的动态图，要录成视频",
+  "gold": "local_live_panel",
+  "kind": "pos",
+  "choice": "local_live_panel"
+ },
+ {
+  "q": "做个终端风格的架构面板，线上有光点在跑、日志在滚的那种",
+  "gold": "local_live_panel",
+  "kind": "pos",
+  "choice": "local_live_panel"
+ },
+ {
+  "q": "我想要一张一直动着的系统架构图，不是静态的一页页翻",
+  "gold": "local_live_panel",
+  "kind": "pos",
+  "choice": "local_live_panel"
+ },
+ {
+  "q": "给我的新app做个15秒的产品发布短片，要电影感、动效利落",
+  "gold": "local_onetake",
+  "kind": "pos",
+  "choice": "local_onetake"
+ },
+ {
+  "q": "做个功能演示视频，别录屏，把界面用HTML复刻出来再动起来",
+  "gold": "local_onetake",
+  "kind": "pos",
+  "choice": "local_onetake"
+ },
+ {
+  "q": "帮我出一条产品promo，要有旁白字幕，节奏别像PPT",
+  "gold": "local_onetake",
+  "kind": "pos",
+  "choice": "local_onetake"
+ },
+ {
+  "q": "我这篇论文的引言你帮我按结构改一遍，投CVPR的",
+  "gold": "local_paper_writing",
+  "kind": "pos",
+  "choice": "local_paper_writing"
+ },
+ {
+  "q": "摘要太长了，帮我压缩，顺便自查一下有没有问题",
+  "gold": "local_paper_writing",
+  "kind": "pos",
+  "choice": "local_paper_writing"
+ },
+ {
+  "q": "方法部分不知道怎么组织，你按学术写作的规矩帮我搭一下",
+  "gold": "local_paper_writing",
+  "kind": "pos",
+  "choice": "local_paper_writing"
+ },
+ {
+  "q": "这组数据我想画个图，你先摆几个样例让我挑，布局配色我组合着选",
+  "gold": "local_plot_is_all_you_need",
+  "kind": "pos",
+  "choice": "local_plot_is_all_you_need"
+ },
+ {
+  "q": "帮我出张图，这是实验结果，想要这种例图同款的感觉",
+  "gold": "local_plot_is_all_you_need",
+  "kind": "pos",
+  "choice": "local_plot_is_all_you_need"
+ },
+ {
+  "q": "这个图库里加一张新的样例图，顺便把索引重建一下",
+  "gold": "local_plot_is_all_you_need",
+  "kind": "pos",
+  "choice": "local_plot_is_all_you_need"
+ },
+ {
+  "q": "按Adrian Punk那套打法，我的X账号冷启动该怎么排帖",
+  "gold": "local_punk_skill",
+  "kind": "pos",
+  "choice": "local_creator_buddy"
+ },
+ {
+  "q": "punk那套起号流程，帮我套到新号上",
+  "gold": "local_punk_skill",
+  "kind": "pos",
+  "choice": "local_punk_skill"
+ },
+ {
+  "q": "X起号的playbook你按我们装的那套来执行一遍",
+  "gold": "local_punk_skill",
+  "kind": "pos",
+  "choice": "none"
+ },
+ {
+  "q": "做一套小红书卡片，要punk一点的风格",
+  "gold": "local_punk_xhs_cards",
+  "kind": "pos",
+  "choice": "local_guizang_social_card_skill"
+ },
+ {
+  "q": "按punk-xhs那套卡片模板给我出几张",
+  "gold": "local_punk_xhs_cards",
+  "kind": "pos",
+  "choice": "local_punk_xhs_cards"
+ },
+ {
+  "q": "小红书图文卡换个更抓眼的版式，用之前收的那套",
+  "gold": "local_punk_xhs_cards",
+  "kind": "pos",
+  "choice": "local_guizang_social_card_skill"
+ },
+ {
+  "q": "帮我写一条Seedance的视频提示词，运镜要写细",
+  "gold": "local_seedance_prompt_skill",
+  "kind": "pos",
+  "choice": "local_seedance_prompt_skill"
+ },
+ {
+  "q": "这个分镜用Seedance生成，提示词你帮我组织一下",
+  "gold": "local_seedance_prompt_skill",
+  "kind": "pos",
+  "choice": "local_seedance_prompt_skill"
+ },
+ {
+  "q": "即梦上跑视频，提示词怎么写才稳",
+  "gold": "local_seedance_prompt_skill",
+  "kind": "pos",
+  "choice": "none"
+ },
+ {
+  "q": "你先核对一下这张截图到底证明什么、范围到哪，再发我结论",
+  "gold": "local_verify_claim_scope_before_reporting",
+  "kind": "pos",
+  "choice": "local_verify_claim_scope_before_reporting"
+ },
+ {
+  "q": "这个测试结果你回读验证过吗？别拿没核对的东西汇报",
+  "gold": "local_verify_claim_scope_before_reporting",
+  "kind": "pos",
+  "choice": "local_verify_claim_scope_before_reporting"
+ },
+ {
+  "q": "出口IP固定没固定，你查清楚实际状态再说，之前就搞错过",
+  "gold": "local_verify_claim_scope_before_reporting",
+  "kind": "pos",
+  "choice": "local_verify_claim_scope_before_reporting"
+ },
+ {
+  "q": "这段视频不错，帮我反推它的提示词，而且要真生成一遍验证像不像",
+  "gold": "local_video_prompt_verifier",
+  "kind": "pos",
+  "choice": "local_video_prompt_verifier"
+ },
+ {
+  "q": "把这个参考视频拆成能复现它的提示词，要带打分证据的",
+  "gold": "local_video_prompt_verifier",
+  "kind": "pos",
+  "choice": "local_video_prompt_verifier"
+ },
+ {
+  "q": "video to prompt，但别只给词，生成出来跟原片比一下差多少",
+  "gold": "local_video_prompt_verifier",
+  "kind": "pos",
+  "choice": "local_video_prompt_verifier"
+ },
+ {
+  "q": "这条视频帮我发到B站和抖音，标题简介你拟一下",
+  "gold": "local_video_publisher_skill",
+  "kind": "pos",
+  "choice": "local_video_publisher_skill"
+ },
+ {
+  "q": "成片好了，走发布流程吧，几个平台一起发",
+  "gold": "local_video_publisher_skill",
+  "kind": "pos",
+  "choice": "local_video_publisher_skill"
+ },
+ {
+  "q": "把昨天那条视频发布出去，记得带话题标签",
+  "gold": "local_video_publisher_skill",
+  "kind": "pos",
+  "choice": "local_video_publisher_skill"
+ },
+ {
+  "q": "这篇公众号文章链接打不开，你帮我把全文读出来",
+  "gold": "local_wechat_reader",
+  "kind": "pos",
+  "choice": "local_wechat_reader"
+ },
+ {
+  "q": "mp.weixin.qq.com这篇被验证码挡了，你想办法读到内容",
+  "gold": "local_wechat_reader",
+  "kind": "pos",
+  "choice": "local_wechat_reader"
+ },
+ {
+  "q": "公众号文章链接发你了，就是打不开，帮我看看讲了什么",
+  "gold": "local_wechat_reader",
+  "kind": "pos",
+  "choice": "local_wechat_reader"
+ },
+ {
+  "q": "按xilo那套，用Opus写代码做一条视频",
+  "gold": "local_xilo_opus_video",
+  "kind": "pos",
+  "choice": "local_xilo_opus_video"
+ },
+ {
+  "q": "学一下那个77万浏览的代码做视频的方法，给我跑一条导航片",
+  "gold": "local_xilo_opus_video",
+  "kind": "pos",
+  "choice": "local_xilo_opus_video"
+ },
+ {
+  "q": "用代码做视频的那套skill，帮我做一条试试",
+  "gold": "local_xilo_opus_video",
+  "kind": "pos",
+  "choice": "local_xilo_opus_video"
+ },
+ {
+  "q": "yichen那套skill里有没有能用在这儿的",
+  "gold": "local_yichen_skills",
+  "kind": "pos",
+  "choice": "local_yichen_skills"
+ },
+ {
+  "q": "把之前收的yichen技能包打开看看有什么",
+  "gold": "local_yichen_skills",
+  "kind": "pos",
+  "choice": "local_yichen_skills"
+ },
+ {
+  "q": "用yichen-skills里的方法处理一下这个",
+  "gold": "local_yichen_skills",
+  "kind": "pos",
+  "choice": "local_yichen_skills"
+ },
+ {
+  "q": "今天天气怎么样，广州会下雨吗",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "帮我把这段英文翻译成中文：The model converges under mild assumptions",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "给我讲个冷笑话吧",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "帮我订一张明天去北京的机票，上午的",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "这道高数题怎么做：求不定积分∫x·e^x dx",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "帮我查一下我下午的日程有没有空",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "写一首关于秋天的七言绝句",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "我的手机连不上WiFi了，怎么排查",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "帮我把这个Excel里的两列数据合并成一列",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ },
+ {
+  "q": "附近有什么好吃的川菜馆",
+  "gold": "none",
+  "kind": "neg",
+  "choice": "none"
+ }
+]
