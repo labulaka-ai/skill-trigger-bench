@@ -10,7 +10,7 @@
 
 ## v1 结果（原描述）：74/82（90.2%）
 - 正例命中 64/72（88.9%）；全局负例 10/10 全部正确拒绝——**没有乱触发**。
-- 19/24 个 skill 满分 3/3。
+- 20/24 个 skill 满分 3/3。
 - 全部 8 条失败：
   1. local_figures4papers 0/3，三条全被 local_plot_is_all_you_need 抢走（原话：「按顶刊的绘图规范帮我把这组实验数据图重做一下」「figures4papers那套matplotlib规范，套到我这张消融图上」「投稿用的图要符合顶会风格，你按那个绘图库的规范来」）。
   2. local_punk_xhs_cards 1/3，两条被 local_guizang_social_card_skill 抢走（「做一套小红书卡片，要punk一点的风格」「小红书图文卡换个更抓眼的版式，用之前收的那套」）。
@@ -36,12 +36,12 @@
 - 描述若落地到真实注册（SKILL.md/skill.yaml），运行时目录会重新生成，本 bench 的 catalog 需随之更新再复测。
 
 ## 文件清单
-catalog.json（v1 目录）/ catalog_v2.json（修复后）/ battery.json / run_bench.py / results.json / results_v2.json / stats.json / compare.py / REPORT.md
+catalog_v1.json（v1 目录）/ battery.json（v3 题库）/ results_v1.json / results_v2.json / results_v3.json / REPORT.md（本文件）；v2 沙盒目录与统计脚本在作者本地工作区
 
 ## 订正与写回讨论（2026-10-19 下午，两个 subagent 分工复核后追加）
 
 ### 订正：punk_skill 的 v2 成绩作废（执行者错误）
-- v2 给 local_punk_skill 写的描述（「Adrian Punk's X growth playbook…冷启动/发帖节奏」）是**张冠李戴**：执行者凭名称与运营手册里的同名概念推断、没读文件夹 README。该 skill 真身（README 原文）是一组**视觉生成** skill：`skills/punk-cover/`（给小红书/公众号/X 生成封面图）＋`skills/punk-avatar/`（生成头像图）＋25+ 封面风格库。与 X 起号毫无关系（X 运营 playbook 在运营手册里，不在这个 skill 里）。
+- v2 给 local_punk_skill 写的描述（「Adrian Punk's X growth playbook…冷启动/发帖节奏」）是**张冠李戴**：执行者凭名称与运营手册里的同名概念推断、没读文件夹 README。该 skill 真身（README 原文）是一组**视觉生成** skill：`skills/punk-cover/`（给小红书/公众号/X 生成封面图）＋`skills/punk-avatar/`（生成头像图）＋40 个 styles 风格原子。与 X 起号毫无关系（X 运营 playbook 在运营手册里，不在这个 skill 里）。
 - 题库里 punk_skill 的 3 条正例按同一错误前提标注 gold，故其 v1 1/3、v2 3/3 均**不计分**。剔除这 3 条无效题后的修正口径：79 条有效题，v1 73/79 → v2 77/79；figures4papers 0→3、seedance 2→3、punk_xhs 1→2 的结论不受影响。97.6% 的原标题数字自此作废，引用以本节为准。
 
 ### 机制查明（subagent A，只读实查）
